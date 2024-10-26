@@ -9,7 +9,7 @@ app=FastAPI(
 )
 
 
-with open(r"mod.pkl","rb") as f:
+with open("mod.pkl","rb") as f:
     model=pickle.load(f)
 
 @app.get("/")
